@@ -1,0 +1,10 @@
+#!/usr/bin/python
+
+import dbus
+
+DBUS_PATH = '/org/guake/RemoteControl'
+DBUS_NAME = 'org.guake.RemoteControl'
+
+bus = dbus.SessionBus()
+remote_object = bus.get_object(DBUS_NAME, DBUS_PATH)
+remote_object.show_hide()

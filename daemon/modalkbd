@@ -1,0 +1,11 @@
+#!/bin/bash
+
+#xfce4-terminal --icon=keyboard --command=modalkb --title="Modal KB" --hold
+
+cmd="modalkb 2>&1 | tee /tmp/modalkb.log"
+
+if [ -z $1 ]; then
+    exec xterm -fg darkgreen -T "Modal KB" -e "$cmd"
+else
+    $cmd
+fi

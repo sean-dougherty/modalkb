@@ -1,0 +1,18 @@
+#include <regex>
+#include <iostream>
+
+using namespace std;
+
+int main(int argc, char **argv) {
+    //regex re("^([CAS]+-)?\\w+$");
+    try {
+	regex re("^\\s*#include\\b");
+    } catch(regex_error x) {
+	switch(x.code()) {
+	case regex_constants::error_brack: cout << "error_brack" << endl;
+	}
+	cout << x.what() << endl;
+    }
+
+    return 0;
+}
