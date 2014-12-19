@@ -34,7 +34,8 @@ void makeGlobalHotkeys() {
 				{ "c",		sys("gnome-calculator") },
 				{ "s",		sys("gksudo synaptic") },
 				{ "o w",	sys("libreoffice --writer") },
-				{ "o c",	sys("libreoffice --calc") }
+				{ "o c",	sys("libreoffice --calc") },
+				{ "p",      sys("xfce4-terminal --command=python") }
 		}) },
 #define SCHOOL "thunar /home/sean/Desktop/school/"
 #define FALL SCHOOL "Fall2013/"
