@@ -35,7 +35,7 @@ void makeGlobalHotkeys() {
 				{ "s",		sys("gksudo synaptic") },
 				{ "o w",	sys("libreoffice --writer") },
 				{ "o c",	sys("libreoffice --calc") },
-				{ "p",      sys("xfce4-terminal --command=python") }
+				{ "p",      sys("xfce4-terminal -e \"python -i $HOME/bin/ienv.py\"") }
 		}) },
 #define SCHOOL "thunar /home/sean/Desktop/school/"
 #define FALL SCHOOL "Fall2013/"
